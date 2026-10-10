@@ -1,20 +1,44 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+# NAFI GPT
 
-# Run and deploy your AI Studio app
+NAFI GPT is an AI-powered web application built with React, TypeScript, and Vite.
 
-This contains everything you need to run your app locally.
+## Technologies Used
 
-View your app in AI Studio: https://ai.studio/apps/316d9335-9606-4115-bdb0-a987e08d5c46
+- React
+- TypeScript
+- Vite
+- Node.js
+- Gemini API
 
-## Run Locally
+## Installation
 
-**Prerequisites:**  Node.js
+1. Clone the repository.
 
+2. Install dependencies:
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+   ```bash
+   npm install
+   ```
+
+3. Create a `.env.local` file and add your Gemini API key:
+
+   ```env
+   GEMINI_API_KEY=your_api_key_here
+   ```
+
+4. Start the development server:
+
+   ```bash
+   npm run dev
+   ```
+
+## Project Structure
+
+- `src/` - Application source code
+- `public/` - Public assets
+- `package.json` - Project dependencies and scripts
+- `vite.config.ts` - Vite configuration
+
+## Developer
+
+Developed by NAFI.
