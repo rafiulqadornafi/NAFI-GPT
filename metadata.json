@@ -1,0 +1,6 @@
+{
+  "name": "NAFI GPT",
+  "description": "NAFI GPT - The personal, unlimited, intelligent AI companion for phone and desktop. Fluent in Bengali and all world languages, with voice conversation, personal memory vault, and zero limits.",
+  "requestFramePermissions": ["camera", "microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

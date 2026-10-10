@@ -1,0 +1,136 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', 'Hind Siliguri', system-ui, -apple-system, sans-serif;
+  }
+  
+  code, pre {
+    font-family: 'JetBrains Mono', monospace;
+  }
+}
+
+/* Custom Sleek Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(148, 163, 184, 0.2);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(148, 163, 184, 0.4);
+}
+
+/* Markdown prose tweaks */
+.prose-nafi {
+  color: #e2e8f0;
+  line-height: 1.7;
+}
+
+.prose-nafi p {
+  margin-bottom: 0.85em;
+}
+
+.prose-nafi p:last-child {
+  margin-bottom: 0;
+}
+
+.prose-nafi h1, .prose-nafi h2, .prose-nafi h3, .prose-nafi h4 {
+  color: #f8fafc;
+  font-weight: 700;
+  margin-top: 1.25em;
+  margin-bottom: 0.5em;
+}
+
+.prose-nafi h1 { font-size: 1.5rem; }
+.prose-nafi h2 { font-size: 1.25rem; }
+.prose-nafi h3 { font-size: 1.1rem; }
+
+.prose-nafi ul {
+  list-style-type: disc;
+  padding-left: 1.25rem;
+  margin-bottom: 0.75em;
+}
+
+.prose-nafi ol {
+  list-style-type: decimal;
+  padding-left: 1.25rem;
+  margin-bottom: 0.75em;
+}
+
+.prose-nafi li {
+  margin-bottom: 0.3em;
+}
+
+.prose-nafi blockquote {
+  border-left: 3px solid #38bdf8;
+  padding-left: 1rem;
+  margin: 0.75em 0;
+  font-style: italic;
+  color: #94a3b8;
+}
+
+.prose-nafi table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+  font-size: 0.9em;
+}
+
+.prose-nafi th, .prose-nafi td {
+  border: 1px solid #334155;
+  padding: 0.5rem 0.75rem;
+  text-align: left;
+}
+
+.prose-nafi th {
+  background-color: rgba(30, 41, 59, 0.8);
+  font-weight: 600;
+}
+
+.prose-nafi code:not(pre code) {
+  background-color: rgba(51, 65, 85, 0.5);
+  color: #38bdf8;
+  padding: 0.15rem 0.35rem;
+  border-radius: 0.25rem;
+  font-size: 0.875em;
+}
+
+.prose-nafi pre {
+  background-color: #0b1120;
+  border: 1px solid #1e293b;
+  border-radius: 0.75rem;
+  padding: 1rem;
+  overflow-x: auto;
+  margin: 0.75em 0;
+}
+
+.prose-nafi pre code {
+  background: transparent;
+  padding: 0;
+  color: #e2e8f0;
+}
+
+.prose-nafi a {
+  color: #38bdf8;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+@keyframes pulse-ring {
+  0% { transform: scale(0.95); opacity: 0.8; }
+  50% { transform: scale(1.15); opacity: 0.3; }
+  100% { transform: scale(0.95); opacity: 0.8; }
+}
+
+.animate-pulse-ring {
+  animation: pulse-ring 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}

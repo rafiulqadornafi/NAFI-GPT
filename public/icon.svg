@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <!-- Background Gradient -->
+    <radialGradient id="spaceGlow" cx="50%" cy="45%" r="65%">
+      <stop offset="0%" stop-color="#1e1b4b" stop-opacity="0.9" />
+      <stop offset="45%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#020617" />
+    </radialGradient>
+
+    <!-- Vibrant Gradient for N -->
+    <linearGradient id="neonN" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="35%" stop-color="#818cf8" />
+      <stop offset="70%" stop-color="#c084fc" />
+      <stop offset="100%" stop-color="#f43f5e" />
+    </linearGradient>
+
+    <!-- Cyan-Emerald Energy Accent -->
+    <linearGradient id="cyanEnergy" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#06b6d4" />
+      <stop offset="100%" stop-color="#3b82f6" />
+    </linearGradient>
+
+    <!-- Deep Glow Filter -->
+    <filter id="intenseGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="18" result="blur1" />
+      <feGaussianBlur stdDeviation="35" result="blur2" />
+      <feMerge>
+        <feMergeNode in="blur2" />
+        <feMergeNode in="blur1" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Container Box with Rounded Chamfer -->
+  <rect width="512" height="512" rx="130" fill="url(#spaceGlow)" />
+  <rect width="512" height="512" rx="130" fill="none" stroke="#334155" stroke-width="3" opacity="0.4" />
+
+  <!-- Background Orbit and Constellation Rings -->
+  <circle cx="256" cy="250" r="215" fill="none" stroke="#38bdf8" stroke-width="1.5" stroke-dasharray="8 8" opacity="0.3" />
+  <circle cx="256" cy="250" r="190" fill="none" stroke="#818cf8" stroke-width="2.5" opacity="0.25" />
+  <circle cx="256" cy="250" r="145" fill="none" stroke="#c084fc" stroke-width="1.5" stroke-dasharray="14 10" opacity="0.3" />
+
+  <!-- Ambient Light Dome -->
+  <circle cx="256" cy="235" r="115" fill="url(#neonN)" opacity="0.18" filter="url(#intenseGlow)" />
+
+  <!-- Core Geometric Holographic Letter 'N' -->
+  <g filter="url(#intenseGlow)">
+    <!-- Left Pillar of N -->
+    <path d="M 144 365 L 144 140 C 144 126 160 118 171 127 L 202 152 C 209 158 213 166 213 175 L 213 365 C 213 375 201 382 192 376 L 157 372 C 149 371 144 368 144 365 Z" fill="url(#cyanEnergy)" />
+
+    <!-- Diagonal Power Bridge of N -->
+    <path d="M 194 144 L 328 344 C 334 353 348 350 350 340 L 334 315 L 218 132 C 211 121 195 128 194 141 Z" fill="url(#neonN)" opacity="0.95" />
+
+    <!-- Right Pillar of N -->
+    <path d="M 299 135 L 299 335 C 299 344 303 352 310 358 L 341 383 C 352 392 368 384 368 370 L 368 145 C 368 136 357 129 348 134 L 313 138 C 304 139 299 141 299 145 Z" fill="url(#neonN)" />
+  </g>
+
+  <!-- Central Intelligence Core Sparkle -->
+  <g transform="translate(256, 240)">
+    <path d="M 0 -52 Q 0 0 -52 0 Q 0 0 0 52 Q 0 0 52 0 Q 0 0 0 -52 Z" fill="#ffffff" filter="url(#intenseGlow)" />
+    <circle cx="0" cy="0" r="8" fill="#38bdf8" />
+    <circle cx="0" cy="0" r="4" fill="#ffffff" />
+  </g>
+
+  <!-- Glowing Neural Constellation Satellites -->
+  <circle cx="132" cy="190" r="6" fill="#38bdf8" filter="url(#intenseGlow)" />
+  <circle cx="380" cy="310" r="6" fill="#f43f5e" filter="url(#intenseGlow)" />
+  <circle cx="256" cy="100" r="5" fill="#818cf8" filter="url(#intenseGlow)" />
+  <circle cx="256" cy="400" r="5" fill="#06b6d4" filter="url(#intenseGlow)" />
+  <circle cx="360" cy="160" r="4" fill="#c084fc" />
+  <circle cx="152" cy="330" r="4" fill="#38bdf8" />
+
+  <!-- Brand Typography Base -->
+  <text x="256" y="448" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="29" font-weight="900" fill="#f8fafc" letter-spacing="7" text-anchor="middle">NAFI GPT</text>
+  <text x="256" y="472" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="12" font-weight="700" fill="#38bdf8" letter-spacing="4" text-anchor="middle" opacity="0.8">ULTRA INTELLIGENCE</text>
+</svg>
